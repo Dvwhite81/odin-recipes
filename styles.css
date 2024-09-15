@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#recipes-list {
+  color: blue;
+  display: grid;
+  font-weight: bold;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 1rem auto;
+  width: 90vw;
+}
+
+#recipes-list div {
+  justify-content: end;
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  text-align: center;
+  width: fit-content;
+}
+
+h3,
+h4 {
+  margin-bottom: 0;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol > li::marker {
+  font-weight: bold;
+}
+
+img {
+  margin: 0 auto;
+}
+
+.absolute {
+  position: absolute;
+  right: 0;
+}
